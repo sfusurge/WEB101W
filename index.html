@@ -1,8 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Document</title>
+    <title>Stormy and Sparky's Grocery List</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <h1 id="title">Stormy & Sparky's Grocery List</h1>
+      <form id="listAddContainer" onsubmit="handleSubmit(event)">
+        <input
+          id="listAddInput"
+          placeholder="Add an item to the shopping list..."
+          autocomplete="off"
+        />
+        <button id="listAddBtn" type="submit">
+          <img id="listAddImg" src="assets/add-item.svg" />
+        </button>
+      </form>
+      <div id="listContainer"></div>
+    </div>
+    <img
+      id="splashImg"
+      src="assets/stormy-sparky.svg"
+      alt="Stormy and Sparky"
+    />
+    <img id="deleteImg" src="assets/delete.svg" onclick="clearList(event)" />
+  </body>
 </html>

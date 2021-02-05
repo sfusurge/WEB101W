@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background-color: #dde1fb;
+  background-image: url(assets/gear-small.svg), url(assets/gear-big.svg);
+  background-position: left 0px, right 0px;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+#container {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+#title {
+  font-size: 63px;
+  font-weight: 800;
+  color: #5957c0;
+  min-width: 1003px;
+}
+
+#listAddContainer {
+  background-color: #e3e7ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2% 0 7%;
+  height: 120px;
+}
+
+#listAddInput,
+#listAddBtn {
+  border: none;
+  background: none;
+  height: fit-content;
+}
+
+#listAddInput {
+  font-size: 40px;
+  width: 80%;
+  color: #5957c0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#listAddInput:focus {
+  outline: none;
+}
+
+#listAddInput::placeholder {
+  color: #b5bdff;
+}
+
+#listAddBtn {
+  padding: 0;
+}
+
+#listAddBtn:hover {
+  cursor: pointer;
+}
+
+#listContainer {
+  background-color: #f8f9ff;
+}
+
+.item {
+  padding-left: 7%;
+  font-size: 40px;
+  font-weight: 500;
+  color: #434387;
+  text-align: left;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.item:not(:first-child) {
+  border-top: 3px solid #d5d7fa;
+}
+
+.addItemImg {
+  padding-right: 15px;
+}
+
+#splashImg {
+  position: fixed;
+  bottom: 55px;
+  right: 55px;
+}
+
+#deleteImg {
+  position: fixed;
+  bottom: 90px;
+  right: 90px;
+}
+
+#deleteImg:hover {
+  cursor: pointer;
+}

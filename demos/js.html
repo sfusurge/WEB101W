@@ -5,9 +5,23 @@
     <title>Document</title>
   </head>
   <body>
-    <p id="timer">0</p>
+    <p id="timer">dwaiughudaw</p>
+    <button onclick="stopTimer(event)">Stop Timer</button>
+    <input onkeypress="" />
     <script>
-      // JS goes here...
+      const timer = document.querySelector('#timer')
+      let i = 0
+      const foo = () => {
+        timer.innerText = i
+        timer.style.fontSize = '25pt'
+        i = i + 1
+      }
+      const myInterval = setTimeout(foo, 30000)
+
+      const stopTimer = (event) => {
+        console.log(event.target)
+        clearInterval(myInterval)
+      }
     </script>
   </body>
 </html>

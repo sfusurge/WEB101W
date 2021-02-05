@@ -5,11 +5,50 @@
     <title>Document</title>
     <style>
       /*CSS goes here*/
+      #red {
+        color: red;
+      }
+
+      .big {
+        font-size: 45pt;
+      }
+
+      p {
+        text-decoration: underline;
+      }
+
+      #flex {
+        display: flex;
+        align-items: center;
+      }
+
+      #space {
+        /* margin-left: 40px; */
+        padding-left: 40px;
+        background-color: lightgray;
+      }
+
+      #query {
+        width: 70%;
+        height: 100px;
+        background-color: lightgray;
+      }
+
+      @media (max-width: 800px) {
+        #query {
+          background-color: black;
+        }
+      }
     </style>
   </head>
   <body>
     <p id="red">This should be red... and underlined</p>
-    <p id="big">This should be big... and underlined</p>
+    <p class="big">This should be big... and underlined</p>
     <p>This should be underlined</p>
+    <div id="flex">
+      <img src="../assets/stormy-sparky.svg" />
+      <p id="space">that div did do something</p>
+    </div>
+    <div id="query"></div>
   </body>
 </html>
