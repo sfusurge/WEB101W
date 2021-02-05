@@ -6,13 +6,19 @@
   </head>
   <body>
     <script>
-      // establish baseline.
-      let truthy = true
-      if (truthy) {
-        console.log('that was true.')
-      } else {
-        console.log('that was false.')
+      const isTruthy = (value) => {
+        if (value) {
+          console.log('that was true.')
+        } else {
+          console.log('that was false.')
+        }
       }
+
+      // establish baseline.
+      console.log('should be true:')
+      isTruthy(true)
+      console.log('should be false:')
+      isTruthy(false)
     </script>
   </body>
 </html>
